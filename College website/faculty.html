@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Committee Members</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .committee-heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .committee-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: calc(100% - 100px);
+  }
+  .profile-card {
+    width: calc(30% - 10px);
+    background-color: blue;
+    padding: 45px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .profile-card:nth-child(2n) {
+    margin: 0 5px;
+  }
+  .profile-card:nth-child(3) {
+    margin-right: 0;
+  }
+  .profile-card img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  .profile-info {
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2 class="committee-heading">Committee Heads</h2>
+  <div class="committee-cards">
+    <div class="profile-card">
+      <img src="https://www.w3schools.com/w3images/team2.jpg" alt="Head 1">
+      <div class="profile-info">
+        <h3>Name</h3>
+        <p>Designation</p>
+      </div>
+    </div>
+    <div class="profile-card">
+      <img src="head2.jpg" alt="Head 2">
+      <div class="profile-info">
+        <h3>Name</h3>
+        <p>Designation</p>
+      </div>
+    </div>
+    <div class="profile-card">
+      <img src="head3.jpg" alt="Head 3">
+      <div class="profile-info">
+        <h3>Name</h3>
+        <p>Designation</p>
+      </div>
+    </div>
+  </div>
+  <h2 class="committee-heading">Committee Members</h2>
+  <div class="committee-cards">
+    <!-- Repeat the following block for each committee member -->
+    <div class="profile-card">
+      <img src="member1.jpg" alt="Member 1">
+      <div class="profile-info">
+        <h3>Name</h3>
+        <p>Designation</p>
+      </div>
+    </div>
+    <!-- End block -->
+  </div>
+</div>
+</body>
+</html>
